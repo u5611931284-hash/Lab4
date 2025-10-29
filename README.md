@@ -1,6 +1,6 @@
 # Laboratorium 4: Debugowanie i Zarządzanie Zasobami w Kubernetes
 
-[cite_start]Repozytorium zawiera pliki konfiguracyjne YAML wykorzystane podczas Laboratorium nr 4 z przedmiotu **Programowanie Full-Stack w Chmurze Obliczeniowej**[cite: 5, 6].
+Repozytorium zawiera pliki konfiguracyjne YAML wykorzystane podczas Laboratorium nr 4 z przedmiotu **Programowanie Full-Stack w Chmurze Obliczeniowej**[cite: 5, 6].
 
 [cite_start]Celem ćwiczeń było zapoznanie się z podstawowymi metodami postępowania w przypadku wystąpienia błędu w zasobach typu `Pod` oraz z mechanizmami zarządzania zasobami (CPU/RAM) w klastrze Kubernetes[cite: 8, 259].
 
