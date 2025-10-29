@@ -1,20 +1,20 @@
 # Laboratorium 4: Debugowanie i Zarządzanie Zasobami w Kubernetes
 
-Repozytorium zawiera pliki konfiguracyjne YAML wykorzystane podczas Laboratorium nr 4 z przedmiotu **Programowanie Full-Stack w Chmurze Obliczeniowej**[cite: 5, 6].
+Repozytorium zawiera pliki konfiguracyjne YAML wykorzystane podczas Laboratorium nr 4 z przedmiotu **Programowanie Full-Stack w Chmurze Obliczeniowej**.
 
-[cite_start]Celem ćwiczeń było zapoznanie się z podstawowymi metodami postępowania w przypadku wystąpienia błędu w zasobach typu `Pod` oraz z mechanizmami zarządzania zasobami (CPU/RAM) w klastrze Kubernetes[cite: 8, 259].
+Celem ćwiczeń było zapoznanie się z podstawowymi metodami postępowania w przypadku wystąpienia błędu w zasobach typu `Pod` oraz z mechanizmami zarządzania zasobami (CPU/RAM) w klastrze Kubernetes.
 
 ## 🔬 Część 1: Postępowanie w przypadku wystąpienia błędu
 
 Ta część laboratorium koncentrowała się na diagnozowaniu i rozwiązywaniu typowych problemów z Pod'ami.
 
 ### `incorrect.yaml`
-* [cite_start]**Problem**: Pod po uruchomieniu przechodził w stan `CrashLoopBackOff`[cite: 90].
-* [cite_start]**Diagnoza**: Użycie polecenia `kubectl logs incorrect-pod` wykazało przyczynę błędu[cite: 92]:
+* **Problem**: Pod po uruchomieniu przechodził w stan `CrashLoopBackOff`.
+* **Diagnoza**: Użycie polecenia `kubectl logs incorrect-pod` wykazało przyczynę błędu:
     ```bash
     /bin/sh: unknown: not found
     ```
-* [cite_start]**Wniosek**: Kontener próbował wykonać nieistniejącą komendę `unknown`[cite: 108].
+* **Wniosek**: Kontener próbował wykonać nieistniejącą komendę `unknown`.
 
 ### `failing.yaml`
 * [cite_start]**Problem**: Pod znajdował się w stanie `Running`[cite: 128], jednak aplikacja wewnątrz nie działała poprawnie.
